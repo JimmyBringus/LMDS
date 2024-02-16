@@ -1,0 +1,13 @@
+flaresolverr:
+  # DockerHub mirror flaresolverr/flaresolverr:latest
+  image: ghcr.io/flaresolverr/flaresolverr:latest
+  container_name: flaresolverr
+  environment:
+    - PUID=1000
+    - PGID=1000
+    - TZ=UTC
+  volumes:
+    - ./volumes/flaresolverr/config:/app/config
+  ports:
+    - 8191:8191
+  restart: unless-stopped
