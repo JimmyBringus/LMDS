@@ -357,9 +357,6 @@ case $mainmenu_selection in
 		echo -e "     "
 	fi
  ;;
-
-       #Earn with LMDS ---------------------------------------------------------------------
-"earn")
 #Add x86 to crontab so it rund after reboot 
         function addtocrontab () {
           local frequency=$1
